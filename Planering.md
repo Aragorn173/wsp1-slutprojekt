@@ -2,7 +2,8 @@
 
 
 ## vad?
-Jag ska göra om mitt program som jag använda i mitt gymnasiearbete. Det var en program som bestod av 25 st ja- och nej-frågor. Varje fråga visade en procentuell chans för att vinna en mängd poäng. Man kan svara ja och då tar man chansen där man kan båda vinna och förlora poäng. Annars kan man svara nej och gå vidare till nästa fråga utan att ens poäng ändras. 
+Jag tänker göra ett quizprogram som liknar mitt gymnasiearbete där man ska kunna svara på frågor och få poäng om man svarar rätt. Och sedan kanske se sin placering på en leaderboard.
+
 
 
 ## varför?
@@ -11,3 +12,35 @@ Jag vill göra om det programmet för mitt förra försök använde jag ganska i
 
 ## hur?
 Jag tänkte använda mig av mysql för att spara informationen. Sedan för att visa det grafiska tänkte jag använda html och jag tänkte använda javascript för att implementera alla funktioner för sidan och för att koppla samman programmet och databasen.
+
+
+
+
+
+#### Vecka 16
+TIS: planering
+
+FRE: Planering, börja med gränsnitt.
+
+#### Vecka 17
+TIS: Gränsnitt 
+
+FRE: Börja med js
+
+#### Vecka 18
+TIS: JS funktioner
+
+FRE: JS
+
+#### Vecka 19
+TIS: Databas
+
+FRE: Databas
+
+#### Vecka 20
+TIS: Fixa till
+
+#### Vecka 21
+TIS: Hosting
+
+FRE: PM
