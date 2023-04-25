@@ -11,11 +11,23 @@ let questions = {
         {
             question: "Ranged top is cringe",
             correctanswer: true
+        },
+        {
+            question: "Jax has the highest base movementspeed",
+            correctanswer: false
+        },
+        {
+            question: "Camille is 70 years old",
+            correctanswer: false
+        },
+        {
+            question: "Cho'Gath has higher AD growth per level than Renekton",
+            correctanswer: true
         }
     ]
 }
 i = 0;
-points = 0;
+var points = 0;
 
 
 function quiz() {
@@ -34,12 +46,13 @@ function showquestion(){
 }
 
 function clicktrue() {
+
     answer = true;
     if (answer === questions.TFQ[i].correctanswer) {
         points++;
     }
-    let points = document.getElementById('points');
-    points.textContent = "points: " + points;
+    let showpoints = document.getElementById('points');
+    showpoints.textContent = "points: " + points;
     i++;
     showquestion();
 }
@@ -48,8 +61,8 @@ function clickfalse() {
     if (answer === questions.TFQ[i].correctanswer) {
         points++;
     }
-    let points = document.getElementById('points');
-    points.textContent = "points: " + points;
+    let showpoints = document.getElementById('points');
+    showpoints.textContent = "points: " + points;
 
     i++;
     showquestion();
