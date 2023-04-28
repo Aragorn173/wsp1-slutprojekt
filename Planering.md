@@ -20,22 +20,22 @@ Jag tänkte använda mig av mysql för att spara informationen. Sedan för att v
 #### Vecka 16
 TIS: planering
 
-FRE: Planering, börja med gränsnitt.
+FRE: Planering
 
 #### Vecka 17
-TIS: Gränsnitt 
-
-FRE: Börja med js
-
-#### Vecka 18
-TIS: JS funktioner
-
-FRE: JS
-
-#### Vecka 19
-TIS: Databas
+TIS: Databas 
 
 FRE: Databas
+
+#### Vecka 18
+TIS: Databas
+
+FRE: få fram en fråga på sidan
+
+#### Vecka 19
+TIS: fler frågor
+
+FRE: fler frågor
 
 #### Vecka 20
 TIS: Fixa till
