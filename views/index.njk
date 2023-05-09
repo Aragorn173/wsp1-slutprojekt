@@ -1,0 +1,18 @@
+{% extends "layout.njk" %}
+{% block content %}
+
+
+    <h1>{{quiz[0].fråga}}</h1>
+
+    <ul>
+    {% for row in quiz %}
+        <li>
+            <p>{{quiz.svar}}</p>
+        </li>
+    {% endfor %}
+<ul>
+
+
+
+
+{% endblock %}

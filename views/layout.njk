@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/docs/css/stylesheet.css">
-    <title>Document</title>
+    <title>{{ title }}</title>
 </head>
 <body>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 
-   <h1>{{rows}}</h1>
-    
 </body>
-<script src="js/quiz.js"></script>
 </html>

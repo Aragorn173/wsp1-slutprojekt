@@ -18,3 +18,17 @@ Jag har kopplat databasen till programmet så jag borde kunna komma åt datan.
 Jag har skrivit en router function för att försöka visa frågan men jag får inte programmet att starta med mitt "start" script.
 
 Nästa lektion ska jag försöka få fram frågorna så man kan se dom och så man kan se de olika svaren.
+
+
+
+
+
+
+
+
+#### TIS 2023-05-09
+Jag har lyckats få fram sidan på localhost så jag kan faktiskt se den.
+Jag har fått fram så att den första frågan visas men inte så alla svarsalternativen visas korrekt.
+
+
+Nästa lektion ska jag försöka visa alla svaren och frågan och lägga till knappar till svaren så man kan välja en av dem.

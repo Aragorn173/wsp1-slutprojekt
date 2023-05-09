@@ -20,9 +20,17 @@ const promisePool = pool.promise();
 
 
 router.get('/', async function(req, res, next) {
-    const [rows] = await promisePool.query("SELECT * FROM al04frågor JOIN al04svar WHERE al04svar.frågeId = al04frågor.id,");
-    res.render('index.html', {
-        rows: rows,
+    const [quiz] = await promisePool.query("SELECT * FROM al04frågor JOIN al04svar WHERE frågeid = al04frågor.id");
+    res.render('index.njk', {
+        quiz: quiz,
         title: 'quiz',
     });
 });
+
+
+
+
+
+
+
+module.exports = router;
