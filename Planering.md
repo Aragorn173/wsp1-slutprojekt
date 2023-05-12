@@ -33,9 +33,9 @@ TIS: Databas
 FRE: få fram en fråga på sidan
 
 #### Vecka 19
-TIS: fler frågor
+TIS: kunna svara på en fråga
 
-FRE: fler frågor
+FRE: kunna svara på en fråga
 
 #### Vecka 20
 TIS: Fixa till

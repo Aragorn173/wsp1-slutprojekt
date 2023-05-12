@@ -32,3 +32,13 @@ Jag har fått fram så att den första frågan visas men inte så alla svarsalte
 
 
 Nästa lektion ska jag försöka visa alla svaren och frågan och lägga till knappar till svaren så man kan välja en av dem.
+
+
+
+
+#### FRE 2023-05-12
+Jag har fått fram alla svaren till en fråga i formen av en formulär med radio-knappar så man kan välja en och sedan submita.
+Dock gör det ingenting att svara än eftersom det är ingen funktion till den. 
+
+Jag måste på något sätt komma åt just det svarets value eftersom det visar om svaret är korrekt eller inte och sedan rätta frågan.
+Jag måste även kunna visa upp nästa fråga.

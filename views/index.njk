@@ -4,13 +4,14 @@
 
     <h1>{{quiz[0].fråga}}</h1>
 
-    <ul>
+
+    
     {% for row in quiz %}
-        <li>
-            <p>{{quiz.svar}}</p>
-        </li>
+      <form action="/answer" method="POST">
+        <input type="radio" id="html" name="fav_language" value= {{ row.korrektsvar }}>
+        <label for="html">{{ row.svar }}</label><br>
     {% endfor %}
-<ul>
+    <button type="submit">Answer</button>
 
 
 
