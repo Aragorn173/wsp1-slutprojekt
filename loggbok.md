@@ -42,3 +42,14 @@ Dock gör det ingenting att svara än eftersom det är ingen funktion till den.
 
 Jag måste på något sätt komma åt just det svarets value eftersom det visar om svaret är korrekt eller inte och sedan rätta frågan.
 Jag måste även kunna visa upp nästa fråga.
+
+
+
+
+
+#### TIS 2023-05-16
+Typ ingeting fungerar.
+
+Det jag behöver få att fungera är att den visar rätt förslag svar istället för alla av förslagen.
+Jag behöver kunna välja en radiobutton och sen kunna se vilken radiobutton som var vald när man klickar "answer".
+jag vet inte hur man ska göra det med dataserver och get och post funktioner.

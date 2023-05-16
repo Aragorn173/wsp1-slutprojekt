@@ -15,6 +15,7 @@ Jag tänkte använda mig av mysql för att spara informationen. Sedan för att v
 
 
 
+https://www.youtube.com/watch?v=BNN4o4gnSF4
 
 
 #### Vecka 16

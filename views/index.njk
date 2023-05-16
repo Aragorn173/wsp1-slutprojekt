@@ -2,17 +2,11 @@
 {% block content %}
 
 
-    <h1>{{quiz[0].fråga}}</h1>
+    <h1>Welcome to the quiz</h1>
 
 
-    
-    {% for row in quiz %}
-      <form action="/answer" method="POST">
-        <input type="radio" id="html" name="fav_language" value= {{ row.korrektsvar }}>
-        <label for="html">{{ row.svar }}</label><br>
-    {% endfor %}
-    <button type="submit">Answer</button>
 
+   <a href="/quiz"> <button>Begin Quiz</button></a>
 
 
 

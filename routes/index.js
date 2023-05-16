@@ -19,9 +19,15 @@ const pool = mysql.createPool({
 const promisePool = pool.promise();
 
 
-router.get('/', async function(req, res, next) {
-    const [quiz] = await promisePool.query("SELECT * FROM al04frågor JOIN al04svar WHERE frågeid = al04frågor.id");
+router.get('/', async function (req, res, next) {
     res.render('index.njk', {
+        title: 'welcome to quiz',
+    });
+});
+
+router.get('/quiz', async function(req, res, next) {
+    const [quiz] = await promisePool.query("SELECT * FROM al04frågor JOIN al04svar WHERE frågeid = al04frågor.id");
+    res.render('quiz.njk', {
         quiz: quiz,
         title: 'quiz',
     });
@@ -29,8 +35,10 @@ router.get('/', async function(req, res, next) {
 
 
 router.post('/answer', async function(req, res, next) {
+    console.log("hej")
+    
 
-})
+});
 
 
 
