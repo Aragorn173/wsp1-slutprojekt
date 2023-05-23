@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mysql = require('mysql2');
-
+var i = 1;
 
 
 
@@ -20,24 +20,32 @@ const promisePool = pool.promise();
 
 
 router.get('/', async function (req, res, next) {
+    const [quiz] = await promisePool.query("SELECT id FROM al04frågor")
     res.render('index.njk', {
         title: 'welcome to quiz',
+        quiz: quiz
     });
 });
 
-router.get('/quiz', async function(req, res, next) {
-    const [quiz] = await promisePool.query("SELECT * FROM al04frågor JOIN al04svar WHERE frågeid = al04frågor.id");
+router.get('/quiz/:id', async function(req, res, next) {
+    const [quiz] = await promisePool.query("SELECT * FROM al04frågor JOIN al04svar on frågeid = al04frågor.id where frågeId = ?", [req.params.id]);
+
+    
     res.render('quiz.njk', {
         quiz: quiz,
         title: 'quiz',
+        fråga: req.params.id
     });
 });
 
 
 router.post('/answer', async function(req, res, next) {
-    console.log("hej")
-    
 
+    console.log("hej")
+    console.log(req.params);
+    
+    //res.redirect('/quiz/'+ i)
+    i++;
 });
 
 

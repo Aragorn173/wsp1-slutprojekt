@@ -53,3 +53,12 @@ Typ ingeting fungerar.
 Det jag behöver få att fungera är att den visar rätt förslag svar istället för alla av förslagen.
 Jag behöver kunna välja en radiobutton och sen kunna se vilken radiobutton som var vald när man klickar "answer".
 jag vet inte hur man ska göra det med dataserver och get och post funktioner.
+
+
+
+#### TIS 2023-05-23
+
+Jag kan gå fram genom frågorna och alternativen står på rätt plats
+
+
+nästa lektion ska jag försöka titta vilken radioknapp som är vald för att kunna se om de svarar rätt eller fel.
