@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mysql = require('mysql2');
 var i = 1;
+var points = 0;
 
 
 
@@ -34,7 +35,8 @@ router.get('/quiz/:id', async function(req, res, next) {
     res.render('quiz.njk', {
         quiz: quiz,
         title: 'quiz',
-        fråga: req.params.id
+        fråga: req.params.id,
+        points: points
     });
 });
 
@@ -43,9 +45,20 @@ router.post('/answer', async function(req, res, next) {
 
     console.log("hej")
     console.log(req.params);
-    
-    //res.redirect('/quiz/'+ i)
+    console.log(req.body.svar);
+
+    if (req.body.svar == 1) {
+        points++;
+        console.log("rätt :)")
+    } else {
+        console.log("fel :(")
+    }
+
+    console.log(points)
+
     i++;
+    res.redirect('/quiz/'+ i)
+    
 });
 
 

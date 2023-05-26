@@ -8,13 +8,15 @@
     
     {% for row in quiz %}
       <form action="/answer" method="POST">
-        <input type="radio" id="{{ row.id }}" name="svar" value= "{{ row.korrektsvar }}">
+        <input type="radio" id="svar" name="svar" value= {{ row.korrekt }}>
         <label for="answer">{{ row.svar }}</label><br>
     {% endfor %}
     <button type="submit">Answer</button>
    <a href="/quiz/{{ quiz[1].id }}"> begin</a>
     </form>
 
+
+    <h1>Points: {{ points }} </h1>
 
 
 {% endblock %}
