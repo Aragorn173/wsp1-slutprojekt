@@ -62,3 +62,10 @@ Jag kan gå fram genom frågorna och alternativen står på rätt plats
 
 
 nästa lektion ska jag försöka titta vilken radioknapp som är vald för att kunna se om de svarar rätt eller fel.
+
+
+#### FRE 2023-05-26
+Nu kan man kör programmet.
+Man kan gå igenom alla frågor och man får poäng om man gissar rätt.
+
+Nästa sak jag ska göra är att lägga till mer frågor, göra ett slut till quizen och städa up console.logs m.m
