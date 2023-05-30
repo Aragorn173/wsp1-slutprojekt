@@ -69,3 +69,6 @@ Nu kan man kör programmet.
 Man kan gå igenom alla frågor och man får poäng om man gissar rätt.
 
 Nästa sak jag ska göra är att lägga till mer frågor, göra ett slut till quizen och städa up console.logs m.m
+
+
+

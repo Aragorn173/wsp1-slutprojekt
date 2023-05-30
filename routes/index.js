@@ -43,24 +43,30 @@ router.get('/quiz/:id', async function(req, res, next) {
 
 router.post('/answer', async function(req, res, next) {
 
-    console.log("hej")
-    console.log(req.params);
-    console.log(req.body.svar);
-
     if (req.body.svar == 1) {
         points++;
-        console.log("rätt :)")
-    } else {
-        console.log("fel :(")
     }
 
-    console.log(points)
 
+    if(i < 5) {
     i++;
     res.redirect('/quiz/'+ i)
+    } else {
+        res.redirect('/result')
+    }
     
 });
 
+router.get('/result', function(req, res, next) {
+
+    
+    res.render('result.njk', {
+        title: 'Result',
+        points: points
+    })
+    i = 1;
+    points = 0;
+})
 
 
 
