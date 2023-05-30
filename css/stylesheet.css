@@ -1,6 +1,0 @@
-body{
-    width: min(90ch, 100vw - 2rem);
-    margin-inline: auto;
-    padding-bottom: 4rem;
-    text-align: center;
-}
